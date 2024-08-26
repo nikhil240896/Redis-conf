@@ -1,0 +1,3 @@
+zip -r my_project.zip my_project/ (zip the folder on server)
+
+sudo apt-get install zip (install zip package on server)

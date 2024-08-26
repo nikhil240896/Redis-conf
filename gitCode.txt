@@ -1,0 +1,23 @@
+git clone {https Url} (clone git project on local)
+
+ls -a (to get the hidden file list)
+
+git status (to get project status)
+
+git add {file name} (to add new file or modify file)
+
+git commit -m {"message"} (record of changes)
+
+git push origin main or git pusht -u origin main (upload local repo to remote repo) //-u (or --set-upstream) means no need origin/main in next time git push work
+
+git init (to initialize git )
+
+git remote add origin {Link} (to add new git repo setup)
+
+git remote set-url origin {link} (to update link)
+
+git remote -v (to find the current git repo)
+
+git branch (to check branch)
+
+git branch -M {branch name} (to rename branch)
