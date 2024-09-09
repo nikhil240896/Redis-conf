@@ -1,0 +1,6 @@
+// for the backup db
+mongodump --uri="mongodb+srv://sidaka9643:TOnCpjFawNk7yPav@cluster0.cxlcwna.mongodb.net/CosmicWedding" --out="C:\mondodb backup\cosmicWedding"
+
+
+// for restore
+mongorestore --uri="mongodb+srv://cosmicweddingofficial:sVot26XTZU2n26qk@cluster0.fdous.mongodb.net/cosmicWedding" --dir="C:\\mondodb backup\\cosmicWedding\\CosmicWedding" --nsInclude="cosmicWedding.*"
