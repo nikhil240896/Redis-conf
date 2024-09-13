@@ -108,5 +108,8 @@ sudo nginx -t (after edit to check status)
 
 sudo systemctl restart nginx
 
+sudo nano /etc/nginx/sites-available/default (to open file)
+
+
 
 
