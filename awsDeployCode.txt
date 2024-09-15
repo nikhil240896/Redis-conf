@@ -110,6 +110,17 @@ sudo systemctl restart nginx
 
 sudo nano /etc/nginx/sites-available/default (to open file)
 
+// ssl certificate code
+
+sudo apt update
+
+sudo apt install certbot python3-certbot-nginx
+
+sudo certbot --nginx -d admin.cosmicwedding.in
+
+sudo certbot renew --dry-run
+
+
 
 
 
