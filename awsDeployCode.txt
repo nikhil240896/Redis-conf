@@ -1,3 +1,5 @@
+sudo su
+
 sudo apt-get update
 
 sudo apt-get install -y nodejs npm (install node )
@@ -108,7 +110,7 @@ sudo nginx -t (after edit to check status)
 
 sudo systemctl restart nginx
 
-sudo nano /etc/nginx/sites-available/default (to open file)
+//sudo nano /etc/nginx/sites-available/default (to open file)
 
 // ssl certificate code
 
@@ -119,6 +121,31 @@ sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d admin.cosmicwedding.in
 
 sudo certbot renew --dry-run
+
+// Redis
+
+sudo apt update
+sudo apt install redis-server
+
+sudo systemctl status redis  // Check if Redis is running
+
+sudo systemctl start redis  // If it’s not running, start Redis
+
+sudo systemctl enable redis  // Enable Redis to start on boot
+
+sudo nano /etc/redis/redis.conf  // Edit the Redis configuration file
+
+bind 0.0.0.0  // To allow connections from external IPs
+
+sudo systemctl restart redis  // Save and exit the file, then restart Redis
+
+redis-cli -h <EC2-Public-IP> -p 6379  // Replace <EC2-Public-IP> with the public IP address of your EC2 instance
+
+sudo ufw allow 6379  // Firewall Configuration
+sudo ufw reload
+
+
+
 
 
 

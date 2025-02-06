@@ -1,0 +1,29 @@
+// TypeScript file
+
+class Student {
+    name : string;
+    age : number;
+    constructor(name : string, age : number) {
+        this.name = name;
+        this.age = age;
+    }
+    getAge() {
+        console.log(`your age is ${this.age}`)
+    }
+}
+
+class Monitor extends Student {
+    talent : string;
+    constructor(name : string, age : number, talent : string) {
+        super(name, age);
+        this.talent = talent
+    }
+    getAge() {
+        super.getAge();
+        console.log(`${this.name} has a talent for ${this.talent}`)
+    }
+}
+
+
+const monRahul = new Monitor("Nikhil", 28, "Dancing")
+monRahul.getAge()
