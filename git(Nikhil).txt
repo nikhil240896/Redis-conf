@@ -1,0 +1,24 @@
+1) git remote -v    // shows the remote repository URL
+
+2) // If your current remote is pointing to the wrong repository, update it using:
+// Change the remote URL
+git remote set-url origin https://github.com/nikhil240896/Redis-conf.git
+
+
+3) // Verify the Change
+git remote -v
+
+// Expected output:
+origin  https://github.com/nikhil240896/Redis-conf.git (fetch)
+origin  https://github.com/nikhil240896/Redis-conf.git (push)
+
+
+4) // If you haven’t committed your changes yet, follow these steps:
+git add .
+git commit -m "Initial commit or your message"
+git push -u origin main
+
+
+// If you have committed changes, push them to the correct repository:
+git push -u origin main  # Use 'master' if that's your branch name
+
