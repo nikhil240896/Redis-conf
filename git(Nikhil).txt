@@ -22,3 +22,18 @@ git push -u origin main
 // If you have committed changes, push them to the correct repository:
 git push -u origin main  # Use 'master' if that's your branch name
 
+5) // Show current Branch
+git branch --show-current
+
+6) // List all local branches
+git branch
+
+7) // Create a new branch
+git branch branch_name
+
+8) // Switch to a branch
+git switch branch_name
+
+9) // Push the new branch to the remote repository
+git push -u origin branch_name
+
