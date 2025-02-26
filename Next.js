@@ -6,3 +6,7 @@ pm2 list
 pm2 start npm --name "Plannit-Frontend" -- start -- --hostname 0.0.0.0  // for Listing of frontend (Next.js)
 pm2 status
 
+
+sudo timedatectl set-timezone Asia/Kolkata    // Set Indian Timezone
+timedatectl   // check the Timezone
+
