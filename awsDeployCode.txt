@@ -61,7 +61,7 @@ server {
     }
 }
 
---------------  CTRL + O ---> override,   press ENTER,   CTRL + X ------> Get out of terminal  -----------------
+--------------  CTRL + O ---> override,   press ENTER,   CTRL + X ------> Get out of nano terminal  -----------------
 
 # Configuration for the first project (cosmic-wedding)
 server {
