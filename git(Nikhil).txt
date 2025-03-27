@@ -1,6 +1,9 @@
 1) git remote -v    // shows the remote repository URL
 
-2) // If your current remote is pointing to the wrong repository, update it using:
+(2)(a) // To remove the current repository
+git remote remove  origin
+
+(2)(b) // If your current remote is pointing to the wrong repository, update it using:
 // Change the remote URL
 git remote set-url origin https://github.com/nikhil240896/Redis-conf.git
 
