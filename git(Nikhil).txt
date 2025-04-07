@@ -38,5 +38,5 @@ git branch branch_name
 git switch branch_name
 
 9) // Push the new branch to the remote repository
-git push -u origin branch_name
+git push -u origin Nikhil  // Pushing branch name "Nikhil" on Github
 
