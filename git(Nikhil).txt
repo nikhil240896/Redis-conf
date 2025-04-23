@@ -42,3 +42,18 @@ git switch branch_name
 9) // Push the new branch to the remote repository
 git push -u origin Nikhil  // Pushing branch name "Nikhil" on Github
 
+
+// Upload code to new Repo
+git init
+git add .
+git commit -m "added new origin"
+git branch -M main
+
+git remote add origin https://github.com/nikhil240896/Blind_Dating.git
+git remote add new_origin https://github.com/nikhil240896/Blind_Dating.git
+
+git push -u origin main
+git push -u new_origin main
+
+
+
