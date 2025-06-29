@@ -1,0 +1,58 @@
+// Snippet
+{
+	"Console Log": {
+    "prefix": "cl",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Insert a console.log statement with cursor inside the variable"
+  },
+
+  "Arrow Function": {
+	"prefix": "af",
+	"body": [
+	  "const $1 = ($2) => {",
+	  "  $0",
+	  "};"
+	],
+	"description": "Create an arrow function with parameters and cursor inside the function body"
+  },
+
+	"React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const $TM_FILENAME_BASE = () => {",
+      "  return (",
+      "    <div>",
+      "      $TM_FILENAME_BASE",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;"
+    ],
+    "description": "Create a React functional component using the file name"
+  },
+
+  "React Arrow Function Component": {
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const $TM_FILENAME_BASE = () => {",
+      "  return (",
+      "    <div>",
+      "      $TM_FILENAME_BASE",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;"
+    ],
+    "description": "Create a React arrow function component using the file name and export it"
+  }
+
+  
+}
