@@ -1,0 +1,30 @@
+// Prettier 
+// Type (ctrl + shift + p)
+// Type (open user settings)
+// Go to (open user settings (json))
+// Paste it
+
+{
+  "workbench.editor.enablePreview": false,
+  "editor.fontSize": 17,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.wordWrap": "on",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
