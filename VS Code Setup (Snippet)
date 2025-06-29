@@ -1,6 +1,9 @@
 // Snippet
-// 
-// Create a new Global snippet
+// Go to snippet through setting button in vs code (In GUI, there is a setting Button)
+// Click on New Global Snippets file
+// Press enter
+// Set the file name as "snippets"
+// press enter
 // Paste it
 
 
