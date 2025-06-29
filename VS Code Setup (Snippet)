@@ -1,4 +1,9 @@
 // Snippet
+// 
+// Create a new Global snippet
+// Paste it
+
+
 {
 	"Console Log": {
     "prefix": "cl",
