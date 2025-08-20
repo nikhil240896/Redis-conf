@@ -36,5 +36,7 @@
   "editor.quickSuggestions": {
     "strings": true
   },
-  "tailwindCSS.experimental.classRegex": ["class:([\\w\\d-/:]+)"]
+  "tailwindCSS.experimental.classRegex": ["class:([\\w\\d-/:]+)"],
+
+  "prettier.singleQuote": false
 }
