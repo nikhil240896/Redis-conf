@@ -1,0 +1,1 @@
+ps -ef | grep pm2 | grep -v grep    // command to check pm2 daemon
