@@ -1,0 +1,56 @@
+# HTTPS (DOMAIN ONLY)
+server {
+    listen 443 ssl;
+    server_name admin.rynkup.com;
+
+    root /var/www/html/rankupAdminPanel;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri /index.html;
+    }
+
+    location /api/ {
+        proxy_pass http://localhost:5087;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    ssl_certificate /etc/letsencrypt/live/admin.rynkup.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/admin.rynkup.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+}
+
+# HTTP → redirect DOMAIN to HTTPS
+server {
+    listen 80;
+    server_name admin.rynkup.com;
+
+    return 301 https://admin.rynkup.com$request_uri;
+}
+
+# HTTP for IP (NO SSL)
+server {
+    listen 80;
+    server_name 13.206.66.141;
+
+    root /var/www/html/rankupAdminPanel;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri /index.html;
+    }
+
+    location /api/ {
+        proxy_pass http://localhost:5087;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
